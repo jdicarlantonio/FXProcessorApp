@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverdriveActivity">
+
+    <SeekBar
+        android:id="@+id/blendSlider"
+        android:layout_width="379dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:max="2000"
+        app:layout_constraintTop_toBottomOf="@+id/blendLabel"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <SeekBar
+        android:id="@+id/volSlider"
+        android:layout_width="379dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:max="4000"
+        app:layout_constraintTop_toBottomOf="@+id/volLabel"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/volLabel"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="124dp"
+        android:text="Volume"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blendSlider" />
+
+    <TextView
+        android:id="@+id/blendVal"
+        android:layout_width="49dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="1.000"
+        app:layout_constraintBottom_toTopOf="@+id/blendSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/volVal"
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="1.000"
+        app:layout_constraintBottom_toTopOf="@+id/volSlider"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/blendLabel"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Blend"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
